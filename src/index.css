@@ -1,0 +1,209 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-link {
+  color: yellow;
+  text-decoration: none;
+}
+.custom-link:hover {
+  color: darkgoldenrod;
+}
+
+.app-board {
+  text-align: center;
+  padding: 20px;
+  background: rgb(84, 83, 83);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Scoreboard */
+.score {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Board styles */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Square styles */
+.square {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 2px solid #ccc;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: darkgray;
+}
+
+/* Message styles */
+.message {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.result {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.result.win {
+  color: #28a745; /* Green for a win */
+}
+
+.result.lose {
+  color: #dc3545; /* Red for a loss */
+}
+
+/* Reset button */
+.reset-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* 
+RPS CSS
+*/
+
+.rps-body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.rps-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.rps-move-icon {
+  height: 50px;
+}
+
+.rps-move-button {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+.rps-js-score {
+  margin-top: 50px;
+}
+
+.rps-reset-score-button {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+.rps-js-result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.rps-score-container {
+  padding: 25px;
+}
+
+.rps-result-container {
+  padding: 25px;
+}
+
+.rps-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.rps-choice-moves {
+  color: white;
+}
+
+.rps-result-msg {
+  align-items: center;
+}
